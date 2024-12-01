@@ -99,42 +99,42 @@ EOF
 "#############################################################################################"
 " Set / Let options and keymappings                                                           "
 "#############################################################################################"
-set fileencodings=ucs-bom,utf-8,latin1
-set number              " Show line numbers"
-set ruler               " Always show the cursor position in the status line"
-set title               " Show the title of the current window"
-set smarttab            " Enable intelligent tab handling; inserts correct number of spaces"
-set incsearch           " Highlight matches as you type during search"
-set wildmenu            " Enable enhanced command-line completion with visual suggestions"
-set termguicolors       " Enable support for 24-bit RGB color in the terminal"
-set hlsearch            " Highlight all matches of the last search"
-set list                " Display whitespace characters, such as trailing spaces and tabs"
-set listchars=trail:⋅,nbsp:⋅,tab:▷⋅ " Define symbols to represent different types of whitespace"
-set background=dark     " Set background to dark for solarized theme compatibility"
-set showcmd             " Show the current command being typed in the status line"
-set showmode            " Display the current mode (e.g., INSERT, VISUAL)"
-set tags=tags;/
-set guioptions=T
-set foldmethod=syntax
-set nofoldenable
-set fillchars+=stl:\ ,stlnc:\
-set laststatus=2
+set number              " Show line numbers" " Show line numbers in the editor. "
+set ruler               " Always show the cursor position in the status line" " No detailed explanation provided. "
+set title               " Show the title of the current window" " No detailed explanation provided. "
+set smarttab            " Enable intelligent tab handling; inserts correct number of spaces" " No detailed explanation provided. "
+set incsearch           " Highlight matches as you type during search" " No detailed explanation provided. "
+set wildmenu            " Enable enhanced command-line completion with visual suggestions" " No detailed explanation provided. "
+set termguicolors       " Enable support for 24-bit RGB color in the terminal" " No detailed explanation provided. "
+set hlsearch            " Highlight all matches of the last search" " No detailed explanation provided. "
+set list                " Display whitespace characters, such as trailing spaces and tabs" " No detailed explanation provided. "
+set listchars=trail:⋅,nbsp:⋅,tab:▷⋅ " Define symbols to represent different types of whitespace" " No detailed explanation provided. "
+set background=dark     " Set background to dark for solarized theme compatibility" " No detailed explanation provided. "
+set showcmd             " Show the current command being typed in the status line" " No detailed explanation provided. "
+set showmode            " Display the current mode (e.g., INSERT, VISUAL)" " No detailed explanation provided. "
 
-let &guicursor = &guicursor . ",a:blinkon0" " Disable the blinking cursor"
+set tags=tags;/         " No detailed explanation provided. "
+set guioptions=T        " No detailed explanation provided. "
+set foldmethod=syntax   " No detailed explanation provided. "
+set nofoldenable        " No detailed explanation provided. "
+set fillchars+=stl:\ ,stlnc:\ " No detailed explanation provided. "
+set laststatus=2        " No detailed explanation provided. "
+
+let &guicursor = &guicursor . ",a:blinkon0" " Disable the blinking cursor" " Set the &guicursor variable to customize behavior. "
 
 """""""""""""""""""""""""""""""""""""""""
 " Disable arrow keys to encourage hjkl traversal"
 """""""""""""""""""""""""""""""""""""""""
-map <up> :echoerr "Stop being stupid"<CR>
-map <down> :echoerr "Stop being stupid"<CR>
-map <left> :echoerr "Stop being stupid"<CR>
-map <right> :echoerr "Stop being stupid"<CR>
+map <up> :echoerr "Stop being stupid"<CR> " Map <up> to perform :echoerr for better usability. "
+map <down> :echoerr "Stop being stupid"<CR> " Map <down> to perform :echoerr for better usability. "
+map <left> :echoerr "Stop being stupid"<CR> " Map <left> to perform :echoerr for better usability. "
+map <right> :echoerr "Stop being stupid"<CR> " Map <right> to perform :echoerr for better usability. "
 
 " Custom key mappings"
-let mapleader = ","
+let mapleader = "," " Set the mapleader variable to customize behavior. "
 
 " Nvim-Tree settings"
-nnoremap <leader>t :NvimTreeToggle<cr>
+nnoremap <leader>t :NvimTreeToggle<cr> " Map <leader>t to perform :NvimTreeToggle<cr> for better usability. "
 lua << EOF
 require'nvim-tree'.setup {}
 EOF
