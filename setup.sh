@@ -24,7 +24,7 @@ function check_tools() {
 # Function to clone configuration repository
 function fetch_config() {
     echo "Fetching Neovim configuration from GitHub..."
-    git clone --recursive https://samueljon@github.com/samueljon/nvim-config.git ~/.config/nvim
+    git clone --recursive git@github.com:samueljon/dotfiles-neovim-config.git ~/.config/nvim
 }
 
 # Function to backup existing configuration
